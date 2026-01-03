@@ -1,4 +1,4 @@
-setwd("T:/scRNA_brain_dataset")
+##setwd("T:/scRNA_brain_dataset")
 
 library(Seurat)
 library(tidyverse)
@@ -122,6 +122,7 @@ levels(Idents(hbct))
 
 # Find marker genes for all clusters and export them to a CSV file
 write.csv(FindAllMarkers(hbct, only.pos = TRUE),"Final_Annotated_Markers.csv",row.names = FALSE)
+
 
 
 
